@@ -107,6 +107,10 @@ $result = mysqli_query(
             <td class="p-2 border"><?= $row['title'] ?></td>
             <td class="p-2 border"><?= $row['amount'] ?></td>
             <td class="p-2 border">
+                <a href="edit.php?id=<?= $row['id'] ?>"
+   class="text-blue-600 hover:underline mr-3">
+   Edit
+</a>
                 <a href="delete.php?id=<?= $row['id'] ?>"
                    class="text-red-600 hover:underline">
                    Delete
@@ -120,3 +124,4 @@ $result = mysqli_query(
 
 </body>
 </html>
+
